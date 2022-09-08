@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Modifier le film numéro 10</title>
+  <link rel="stylesheet" type="text/css" href="css/admin.css?v=1.1">
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="admin">Films</a></li>
+          <li><a href="admin?entite=genre">Genres</a></li>
+          <li><a href="admin?entite=realisateur">Réalisateurs</a></li>
+          <li><a href="admin?entite=acteur">Acteurs</a></li>
+          <li><a href="admin?entite=pays">Pays</a></li>
+          <li><a href="admin?entite=seance">Séances</a></li>
+          <li><a href="admin?entite=salle">Salles</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+    <section>
+  <h1>MODIFIER LE FILM NUMÉRO 10</h1>
+  
+  <form method="POST" action="admin?entite=film&action=m&film_id=10 ">
+
+    <label>Titre</label>
+    <input name="film_titre" value="MANON DES SOURCES">
+    <span>&nbsp;</span>
+
+    <label>Année de sortie</label>
+    <input name="film_annee_sortie" type="number" value="1986"
+           min="1895" max="2021">
+    <span>&nbsp;</span>
+
+    <label>Durée (minutes)</label>
+    <input name="film_duree" type="number" value="120"
+           min="1" max="600">
+    <span>&nbsp;</span>
+
+    <label>Genre</label>
+    <select name="film_genre_id">
+            <option value="1" >Animation</option>
+            <option value="2" >Comédie</option>
+            <option value="3" >Comédie dramatique</option>
+            <option value="4" selected>Drame</option>
+            <option value="5" >Documentaire</option>
+          </select>
+    <span>&nbsp;</span>
+
+    <label>Résumé</label>
+    <textarea name="film_resume" rows="3">Les années ont passé depuis la mort de Jean de Florette. Ugolin Soubeyran est désormais propriétaire des Romarins et prospère grâce à la culture des œillets. Son oncle César souhaite maintenant qu&#039;il se marie pour perpétuer le nom de la famille. Ugolin tombe sous le charme de Manon, la fille du bossu, devenue une belle jeune femme. Mais la vérité sur les circonstances qui ont conduit son père à la mort menace d&#039;éclater à tout moment. Ugolin, malgré les avertissements de son oncle, essaye désespérément de séduire la jeune femme. Cette dernière, par souci de vengeance, va boucher la source. Un jeune instituteur arrive au village, et tombe sous le charme de la belle sauvageonne, qui va tomber à son tour amoureuse de lui.</textarea>
+    <span>&nbsp;</span>
+
+    <label>Statut</label>
+    <select name="film_statut">
+      <option value="0" >Invisible</option>
+      <option value="1"   selected>Visible  </option>
+      <option value="2"   >Archivé  </option>
+    </select>
+    <span>&nbsp;</span>
+
+    <input type="hidden" name="film_id" value="10">
+
+    <input type="submit" value="Envoyer">
+  </form>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>

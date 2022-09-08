@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Gestion des films</title>
+  <link rel="stylesheet" type="text/css" href="css/admin.css?v=1.1">
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="admin">Films</a></li>
+          <li><a href="admin?entite=genre">Genres</a></li>
+          <li><a href="admin?entite=realisateur">Réalisateurs</a></li>
+          <li><a href="admin?entite=acteur">Acteurs</a></li>
+          <li><a href="admin?entite=pays">Pays</a></li>
+          <li><a href="admin?entite=seance">Séances</a></li>
+          <li><a href="admin?entite=salle">Salles</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+    <section>
+  <h1>GESTION DES FILMS</h1>
+  <a href="admin?entite=film&action=a">Ajouter un film</a>
+  <p class="messageRetourAction fait">&nbsp;</p>   
+  <div class="g films">
+    <div class="t">Id</div>
+    <div class="t">Titre</div>
+    <div class="t">Sortie</div>
+    <div class="t">Durée</div>
+    <div class="t">Genre</div>
+    <div class="t">Statut</div>
+    <div class="t">Nb Real.</div>
+    <div class="t">Nb Act.</div>
+    <div class="t">Nb Pays</div>
+    <div class="t">Actions</div>
+      <div class="l">
+      <div class="c dr">11</div>
+      <div class="c   ">FILM TEST</div>
+      <div class="c mi">2021</div>
+      <div class="c dr">130</div>
+      <div class="c   ">Comédie dramatique</div>
+      <div class="c   ">
+         Invisible
+              </div>
+      <div class="c dr"></div>
+      <div class="c dr"></div>
+      <div class="c dr"></div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=11">modifier</a>
+                <span class="confirmer" data-href="admin?entite=film&action=s&film_id=11">supprimer</span>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">10</div>
+      <div class="c   ">MANON DES SOURCES</div>
+      <div class="c mi">1986</div>
+      <div class="c dr">120</div>
+      <div class="c   ">Drame</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">5</div>
+      <div class="c dr">3</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=10">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">9</div>
+      <div class="c   ">JEAN DE FLORETTE</div>
+      <div class="c mi">1986</div>
+      <div class="c dr">120</div>
+      <div class="c   ">Drame</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">4</div>
+      <div class="c dr">4</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=9">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">8</div>
+      <div class="c   ">JOSEP</div>
+      <div class="c mi">2020</div>
+      <div class="c dr">71</div>
+      <div class="c   ">Animation</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr"></div>
+      <div class="c dr">3</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=8">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">7</div>
+      <div class="c   ">FRANCE</div>
+      <div class="c mi">2021</div>
+      <div class="c dr">133</div>
+      <div class="c   ">Comédie dramatique</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">6</div>
+      <div class="c dr">4</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=7">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">6</div>
+      <div class="c   ">UN TRIOMPHE</div>
+      <div class="c mi">2019</div>
+      <div class="c dr">106</div>
+      <div class="c   ">Comédie dramatique</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">10</div>
+      <div class="c dr">1</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=6">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">5</div>
+      <div class="c   ">VIVRE EN GRAND</div>
+      <div class="c mi">2020</div>
+      <div class="c dr">96</div>
+      <div class="c   ">Documentaire</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr"></div>
+      <div class="c dr">1</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=5">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">4</div>
+      <div class="c   ">LE CLUB VINLAND</div>
+      <div class="c mi">2020</div>
+      <div class="c dr">125</div>
+      <div class="c   ">Drame</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">7</div>
+      <div class="c dr">1</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=4">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">3</div>
+      <div class="c   ">OSS 117 - BONS BAISERS D&#039;AFRIQUE</div>
+      <div class="c mi">2021</div>
+      <div class="c dr">116</div>
+      <div class="c   ">Comédie</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">6</div>
+      <div class="c dr">1</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=3">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">2</div>
+      <div class="c   ">DÉLICIEUX</div>
+      <div class="c mi">2021</div>
+      <div class="c dr">112</div>
+      <div class="c   ">Comédie dramatique</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">6</div>
+      <div class="c dr">1</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=2">modifier</a>
+              </div>
+    </div>
+      <div class="l">
+      <div class="c dr">1</div>
+      <div class="c   ">MARIA CHAPDELAINE</div>
+      <div class="c mi">2021</div>
+      <div class="c dr">158</div>
+      <div class="c   ">Drame</div>
+      <div class="c   ">
+           Visible
+              </div>
+      <div class="c dr">1</div>
+      <div class="c dr">10</div>
+      <div class="c dr">1</div>
+      <div class="c   ">
+        <a href="admin?entite=film&action=m&film_id=1">modifier</a>
+              </div>
+    </div>
+   
+  </div>
+</section>
+
+
+    <script type="module" src="js/modaleSuppression.js"></script>
+    <dialog id="modaleSuppression">
+      <p>Confirmez la suppression</p>
+      <div class="actions">
+        <button class="OK">OK</button>
+        <button class="KO focus">Annuler</button>
+      </div>
+    </dialog>
+    
+    </main>
+   </div>
+ </body>
+</html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ajouter un film</title>
+  <link rel="stylesheet" type="text/css" href="css/admin.css?v=1.1">
+</head>
+
+<body>
+  <div id="page">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="admin">Films</a></li>
+          <li><a href="admin?entite=genre">Genres</a></li>
+          <li><a href="admin?entite=realisateur">Réalisateurs</a></li>
+          <li><a href="admin?entite=acteur">Acteurs</a></li>
+          <li><a href="admin?entite=pays">Pays</a></li>
+          <li><a href="admin?entite=seance">Séances</a></li>
+          <li><a href="admin?entite=salle">Salles</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+    <section>
+  <h1>AJOUTER UN FILM</h1>
+  
+  <form method="POST" action="admin?entite=film&action=a">
+
+    <label>Titre</label>
+    <input name="film_titre" value="">
+    <span>&nbsp;Au moins un caractère.</span>
+
+    <label>Année de sortie</label>
+    <input name="film_annee_sortie" type="number" value="2021"
+           min="1895" max="2021">
+    <span>&nbsp;</span>
+
+    <label>Durée (minutes)</label>
+    <input name="film_duree" type="number" value=""
+           min="1" max="600">
+    <span>&nbsp;Entre 1 et 600.</span>
+
+    <label>Genre</label>
+    <select name="film_genre_id">
+      <option value="">Sélectionnez un genre</option>
+            <option value="1" >Animation</option>
+            <option value="2" >Comédie</option>
+            <option value="3" >Comédie dramatique</option>
+            <option value="4" >Drame</option>
+            <option value="5" >Documentaire</option>
+          </select>
+    <span>&nbsp;Genre non sélectionné.</span>
+
+    <label>Résumé</label>
+    <textarea name="film_resume" rows="3"></textarea>
+    <span>&nbsp;Au moins 5 mots.</span>
+
+    <label>Statut</label>
+    <select name="film_statut">
+      <option value="0" selected>Invisible</option>
+      <option value="1"   >Visible  </option>
+      <option value="2"   >Archivé  </option>
+    </select>
+    <span>&nbsp;</span>
+
+    <input type="submit" value="Envoyer">
+
+  </form>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>
